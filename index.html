@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Krishna Agarwal | Java Backend Developer & Spring Boot Specialist</title>
+  <meta name="description" content="Portfolio of Krishna Agarwal, a Java Backend Developer based in Lucknow. Specializing in Spring Boot, REST APIs, and Microservices. BCA Rank #1 and Research Scholar.">
+  <meta name="keywords" content="Krishna Agarwal, Java Developer Lucknow, Spring Boot Developer, Backend Engineer Portfolio, National Post Graduate College topper">
+  <meta name="author" content="Krishna Agarwal">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://krishna.vercel.app/">
+  <meta property="og:title" content="Krishna Agarwal | Java Backend Developer">
+  <meta property="og:description" content="Explore the portfolio of Krishna Agarwal, featuring projects in Spring Boot, MERN stack, and Scopus-indexed research.">
+  <meta property="og:image" content="./assets/profile-meta-preview.jpg">
+
+  <link rel="canonical" href="https://krishna.vercel.app/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500;700&family=Crimson+Pro:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="./style.css" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Krishna Agarwal",
+  "jobTitle": "Java Backend Developer",
+  "url": "https://krishna.vercel.app/",
+  "address": {
+    "@type": "Baniya Mohal Sadar 226002",
+    "addressLocality": "Lucknow",
+    "addressCountry": "India"
+  },
+  "collegue": "National Post Graduate College",
+  "sameAs": [
+    "https://www.linkedin.com/in/kr254na/",
+    "https://github.com/kr254na",
+    "https://leetcode.com/u/kr254na/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- Canvas Background -->
+<canvas id="canvas-bg"></canvas>
+
+<!-- Floating Status Badge -->
+<div class="floating-badge">
+  <div class="floating-badge-dot"></div>
+  Open to Opportunities
+</div>
+
+<!-- Certificate / Image Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕ Close</button>
+    <div class="modal-img-wrap" id="modalImgWrap"></div>
+    <div class="modal-title" id="modalTitle"></div>
+    <div class="modal-subtitle" id="modalSubtitle"></div>
+    <div class="modal-actions" id="modalActions"></div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <a href="javascript:void(0)" data-target="hero" class="nav-logo">KA<span>.</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">☰</button>
+  <ul class="nav-links">
+    <li><a href="javascript:void(0)" data-target="about">About</a></li>
+    <li><a href="javascript:void(0)" data-target="skills">Skills</a></li>
+    <li><a href="javascript:void(0)" data-target="projects">Projects</a></li>
+    <li><a href="javascript:void(0)" data-target="research">Research</a></li>
+    <li><a href="javascript:void(0)" data-target="certificates">Certs</a></li>
+    <li><a href="javascript:void(0)" data-target="achievements">Awards</a></li>
+    <li><a href="javascript:void(0)" data-target="gallery">Gallery</a></li>
+    <li><a href="javascript:void(0)" data-target="contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <span class="theme-label" id="themeLabel">Dark</span>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <div class="hero-tag-dot"></div>
+         Java · Spring Boot · SQL
+      </div>
+      <h1 class="hero-name">
+        <div class="first">Krishna</div>
+        <div class="last">Agarwal</div>
+      </h1>
+      <p class="hero-role">Java Backend Developer</p>
+      <div class="typewriter-container">
+        <span class="typewriter" id="typewriter"></span>
+      </div>
+      <p class="hero-summary">
+        BCA undergraduate and Java backend developer with hands-on experience in building scalable web
+applications. Skilled in Java and Spring Boot with practical exposure to real-world projects.
+      </p>
+
+      <!-- Social Profile Links -->
+      <div class="hero-social-links">
+        <a href="https://www.linkedin.com/in/kr254na/" target="_blank" class="hero-social-link linkedin">
+          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/kr254na" target="_blank" class="hero-social-link github">
+          <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+        <a href="https://leetcode.com/u/kr254na/" target="_blank" class="hero-social-link leetcode">
+          <svg viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          LeetCode
+        </a>
+        <a href="https://www.hackerrank.com/profile/krishnaagarwal07" target="_blank" class="hero-social-link hackerrank">
+          <svg viewBox="0 0 24 24"><path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24C10.714 24 2.25 19.114 1.608 18 .964 16.885.964 7.115 1.608 6 2.25 4.886 10.715 0 12 0zm-.055 6.386c-.195 0-.384.144-.384.372l-.014 2.016H9.375c-.468 0-.556.386-.556.627v5.242c0 .253.09.627.578.627h1.784v2.063c0 .24.193.372.38.372.208 0 .335-.09.559-.313l1.35-1.354c-.006-.006 0-4.96 0-4.96.001-.36-.147-.677-.605-.677h-1.832l.003-3.51c0-.24-.196-.505-.491-.505zm2.874 3.047c-.208 0-.335.088-.558.311l-.755.757c.004.004.02 1.862.02 1.862h1.21v1.547c0 .24.195.505.491.505.194 0 .384-.144.384-.372V9.812c0-.254-.09-.38-.792-.38z"/></svg>
+          HackerRank
+        </a>
+        <a href="mailto:krishnaagarwal0193@gmail.com" class="hero-social-link email">
+          <svg viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          Email
+        </a>
+      </div>
+
+      <!-- CTAs + CV Download -->
+      <div class="hero-ctas">
+        <a href="javascript:void(0)" data-target="projects" class="btn-primary"><span>🚀 View Projects</span></a>
+        <a href="javascript:void(0)" data-target="contact" class="btn-outline">📬 Get in Touch</a>
+        <a href="/assets/CV.pdf" download class="btn-cv">⬇ Download CV</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">8.2</div>
+          <div class="hero-stat-desc">CGPA</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">#1</div>
+          <div class="hero-stat-desc">BCA Topper</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">5+</div>
+          <div class="hero-stat-desc">Research Papers</div>
+        </div>
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">5+</div>
+          <div class="hero-stat-desc">Projects</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-avatar-container">
+        <div class="hero-avatar-ring"></div>
+        <div class="hero-avatar-ring2"></div>
+        <div class="hero-avatar-core">
+          <!--<div class="hero-initials">KA</div>-->
+        </div>
+        <div class="hero-stat-chips left">
+          <div class="stat-chip">
+            <div class="stat-chip-value">☕</div>
+            <div class="stat-chip-label">Java Dev</div>
+          </div>
+          <div class="stat-chip">
+            <div class="stat-chip-value">🔬</div>
+            <div class="stat-chip-label">Researcher</div>
+          </div>
+          <div class="stat-chip">
+            <div class="stat-chip-value">🏆</div>
+            <div class="stat-chip-label">Rank #1</div>
+          </div>
+        </div>
+        <div class="hero-stat-chips top">
+          <div class="stat-chip">
+            <div class="stat-chip-value">95.1%</div>
+            <div class="stat-chip-label">ICSE</div>
+          </div>
+          <div class="stat-chip">
+            <div class="stat-chip-value">91.2%</div>
+            <div class="stat-chip-label">ISC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span class="scroll-text">Scroll</span>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about">
+  <div class="section-wrapper">
+    <div class="section-header reveal">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">General <em>About</em></h2>
+    </div>
+
+    <div class="about-layout">
+      <div class="about-avatar-wrap">
+        <div class="about-avatar-container">
+          <div class="about-avatar-ring-outer"></div>
+          <div style="width:200px;height:200px;border-radius:50%;background:var(--surface);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;box-shadow:0 0 60px var(--glow);font-family:'Syne',sans-serif;font-size:4rem;font-weight:800;background:url('./assets/profile-left.jpg') no-repeat center/cover;"></div>
+        </div>
+        <div class="about-quick-facts">
+          <div class="quick-fact">
+            <span class="quick-fact-icon">🎓</span>
+            <span class="quick-fact-label">Degree</span>
+            <span class="quick-fact-val">BCA</span>
+          </div>
+          <div class="quick-fact">
+            <span class="quick-fact-icon">🏫</span>
+            <span class="quick-fact-label">College</span>
+            <span class="quick-fact-val">NPGC, Lucknow</span>
+          </div>
+          <div class="quick-fact">
+            <span class="quick-fact-icon">📍</span>
+            <span class="quick-fact-label">Location</span>
+            <span class="quick-fact-val">Lucknow, India</span>
+          </div>
+          <div class="quick-fact">
+            <span class="quick-fact-icon">📊</span>
+            <span class="quick-fact-label">CGPA</span>
+            <span class="quick-fact-val">8.2 · Rank #1</span>
+          </div>
+          <div class="quick-fact">
+            <span class="quick-fact-icon">💼</span>
+            <span class="quick-fact-label">Status</span>
+            <span class="quick-fact-val" style="color:var(--accent2);">Open to Work</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <p class="about-bio reveal reveal-delay-1">
+          Hello! I'm <strong>Krishna Agarwal</strong>, a passionate BCA final-year undergraduate at National Post Graduate College, Lucknow, specializing in <strong>Java Backend Development</strong> with Spring Boot.
+          <br><br>
+          I consistently rank <strong>#1 in BCA across 5 consecutive semesters</strong> with a CGPA of 8.2, reflecting my dedication to academic excellence. I have a strong foundation in both frontend and backend development, along with hands-on experience in designing real-world applications.
+
+On the frontend, I have worked with <strong>HTML5, CSS3, Bootstrap, JavaScript,</strong> and <strong>React.js</strong>  to create responsive and user-friendly interfaces. On the backend, I specialize in <strong>Java, Spring Boot,</strong> and <strong>Hibernate</strong> , building scalable and efficient server-side applications. I am also proficient in working with databases such as <strong>MySQL</strong> and <strong>MongoDB</strong>.
+          <br><br>
+          I love building systems that solve real-world problems — from educational marketplace platforms to IoT-powered smart waste management. With <strong>10+ research papers</strong> published in cryptography and <strong>5+ projects</strong> built, I am eager to contribute my skills and passion to impactful software development opportunities.
+        </p>
+
+        <div class="about-highlights reveal reveal-delay-2">
+          <div class="about-highlight-card">
+            <div class="about-highlight-num">8.2</div>
+            <div class="about-highlight-desc">CGPA</div>
+          </div>
+          <div class="about-highlight-card">
+            <div class="about-highlight-num">#1</div>
+            <div class="about-highlight-desc">BCA Rank</div>
+          </div>
+          <div class="about-highlight-card">
+            <div class="about-highlight-num">5+</div>
+            <div class="about-highlight-desc">Research Papers</div>
+          </div>
+          <div class="about-highlight-card">
+            <div class="about-highlight-num">5+</div>
+            <div class="about-highlight-desc">Projects Built</div>
+          </div>
+        </div>
+
+        <div class="about-education reveal reveal-delay-3">
+          <div class="about-edu-title">📚 Education</div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div>
+              <div class="edu-name">Bachelor of Computer Applications (BCA)</div>
+              <div class="edu-sub">National Post Graduate College, Lucknow</div>
+              <div class="edu-year">2023 – 2026 · CGPA: 8.2 · Rank #1 (5 Sems)</div>
+              <div class="edu-links">
+                <a class="edu-link-btn" onclick="openModal('BCA Marksheet — Semester I','National Post Graduate College','./assets/marksheets/NPGC Marksheet Sem - I Digilocker.pdf','bca-s1')">📄 Sem I</a>
+                <a class="edu-link-btn" onclick="openModal('BCA Marksheet — Semester II','National Post Graduate College','./assets/marksheets/NPGC Marksheet Sem - II.pdf','bca-s2')">📄 Sem II</a>
+                <a class="edu-link-btn" onclick="openModal('BCA Marksheet — Semester III','National Post Graduate College','./assets/marksheets/NPGC Marksheet Sem III - Digilocker.pdf','bca-s3')">📄 Sem III</a>
+                <a class="edu-link-btn" onclick="openModal('BCA Marksheet — Semester IV','National Post Graduate College','./assets/marksheets/NPGC Marksheet Sem - IV.pdf','bca-s4')">📄 Sem IV</a>
+                <a class="edu-link-btn" onclick="openModal('BCA Marksheet — Semester V','National Post Graduate College','./assets/marksheets/NPGC Marksheet Sem - V.pdf','bca-s5')">📄 Sem V</a>
+              </div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot" style="background:var(--accent2);box-shadow:0 0 8px var(--accent2);"></div>
+            <div>
+              <div class="edu-name">ISC — 91.2%</div>
+              <div class="edu-sub">St. Paul's College, Lucknow · Meritorious Award 2023</div>
+              <div class="edu-year">2023</div>
+              <div class="edu-links">
+                <a class="edu-link-btn" onclick="openModal('ISC Marksheet','St. Paul\'s College · 2023','./assets/marksheets/ISC Marksheet Digilocker.pdf','isc-ms')">📄 View Marksheet</a>
+              </div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot" style="background:var(--accent3);box-shadow:0 0 8px var(--accent3);"></div>
+            <div>
+              <div class="edu-name">ICSE — 95.1%</div>
+              <div class="edu-sub">St. Paul's College, Lucknow · Subject Topper — 100/100 Soc. Science</div>
+              <div class="edu-year">2021 · Top 5 in School</div>
+              <div class="edu-links">
+                <a class="edu-link-btn" onclick="openModal('ICSE Marksheet','St. Paul\'s College · 2021','./assets/marksheets/ICSE Marksheet Digilocker.pdf','icse-ms')">📄 View Marksheet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ==================== SKILLS ==================== -->
+<section id="skills">
+  <div class="section-wrapper">
+    <div class="section-header reveal">
+      <div class="section-label">Technical Arsenal</div>
+      <h2 class="section-title">Skills & <em>Expertise</em></h2>
+    </div>
+
+    <div class="skills-layout">
+      <div class="skills-intro reveal">
+        <p>From low-level Java fundamentals to cloud-deployed microservices, I build systems that are robust, scalable, and production-ready. My stack spans backend APIs, full-stack web, and academic research.</p>
+        <div class="skill-bar-section">
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span class="skill-bar-name">Java & Spring Boot</span><span class="skill-bar-pct">88%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span class="skill-bar-name">MERN Stack</span><span class="skill-bar-pct">82%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span class="skill-bar-name">REST API Design</span><span class="skill-bar-pct">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span class="skill-bar-name">Databases (SQL/NoSQL)</span><span class="skill-bar-pct">78%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-meta"><span class="skill-bar-name">Docker & DevOps</span><span class="skill-bar-pct">65%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="71"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">☕</div>
+          <div class="skill-card-title">Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-icon">🌿</div>
+          <div class="skill-card-title">Frameworks</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Hibernate</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">React.js</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-icon">🗄️</div>
+          <div class="skill-card-title">Databases</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-card-icon">🔧</div>
+          <div class="skill-card-title">Tools & Concepts</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">MVC</span>
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-card-icon">🎨</div>
+          <div class="skill-card-title">Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">React.js</span>
+          </div>
+        </div>
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-card-icon">🔐</div>
+          <div class="skill-card-title">Research Areas</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Cryptography</span>
+            <span class="skill-tag">Path Finding Algorithms</span>
+            <span class="skill-tag">Smart Automated Farming</span>
+            <span class="skill-tag">Educational System</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ==================== PROJECTS ==================== -->
+<section id="projects">
+  <div class="section-wrapper">
+    <div class="section-header reveal">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Featured <em>Projects</em></h2>
+    </div>
+
+    <div class="project-tabs reveal">
+      <button class="project-tab active" data-tab="major">Major Projects</button>
+      <button class="project-tab" data-tab="frontend"><i class="fas fa-paint-brush"></i> Frontend</button>
+      <button class="project-tab" data-tab="core-java"><i class="fab fa-java"></i> Core Java</button>
+      <button class="project-tab" data-tab="advanced-java"><i class="fas fa-layer-group"></i> Advanced Java</button>
+      <button class="project-tab" data-tab="spring-boot"><i class="fas fa-leaf"></i> Spring Boot</button>
+      <button class="project-tab" data-tab="mern"><i class="fas fa-database"></i> MERN Stack</button>
+      <button class="project-tab" data-tab="software"><i class="fas fa-laptop-code"></i> Softwares</button>
+    </div>
+
+    <!-- MAJOR PROJECTS -->
+    <div class="project-panel active" id="tab-major">
+
+      <!-- Shiksha Swap — Java / Spring Boot -->
+<div class="project-card" data-category="spring-boot">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-exchange-alt"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Shiksha-Swap-Backend" class="project-link" target="_blank">
+        <i class="fab fa-github"></i> Backend
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-wip">
+    <div class="project-status-dot"></div> In Progress
+  </div>
+
+  <div class="project-title">Shiksha Swap</div>
+
+  <div class="project-desc">
+    A dual-role, on-demand hybrid tutoring platform that enables users to act as both learners and educators, providing real-time academic assistance, course content, and a knowledge exchange ecosystem.
+  </div>
+
+  <ul class="project-points">
+    <li>Designed a scalable Service-Oriented Architecture (SOA) with Spring Boot backend</li>
+    <li>Implemented dual-role user system (Student + Tutor) with booking workflows</li>
+    <li>Integrated Razorpay payment gateway for secure transactions</li>
+    <li>Developed AI-based price recommendation system using Python</li>
+    <li>Built RESTful APIs with Hibernate ORM and MySQL database</li>
+    <li>Cloud storage integration (AWS S3) for course content and media</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">Java</span>
+    <span class="stack-tag">Spring Boot</span>
+    <span class="stack-tag">MySQL</span>
+    <span class="stack-tag">React.js</span>
+    <span class="stack-tag">Tailwind CSS</span>
+    <span class="stack-tag">REST API</span>
+    <span class="stack-tag">Razorpay</span>
+    <span class="stack-tag">AWS</span>
+    <span class="stack-tag">Python (AI)</span>
+  </div>
+</div>
+
+      <!-- AgroSmart — Java / Spring Boot -->
+     <div class="project-card" data-category="spring-boot">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-seedling"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Agro-Smart-Frontend" class="project-link" target="_blank">
+        <i class="fab fa-github"></i> Frontend
+      </a>
+      <a href="https://github.com/kr254na/Agro-Smart-Backend" class="project-link" target="_blank">
+        <i class="fab fa-github"></i> Backend
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-wip">
+    <div class="project-status-dot"></div> In Progress
+  </div>
+
+  <div class="project-title">AgroSmart</div>
+
+  <div class="project-desc">
+    An intelligent agriculture management platform designed to assist farmers with real-time monitoring, data-driven insights, and smart decision-making using IoT and web technologies.
+  </div>
+
+  <ul class="project-points">
+    <li>Developed a scalable backend using Spring Boot with RESTful API architecture</li>
+    <li>Integrated IoT-based data collection for real-time farm monitoring</li>
+    <li>Built a TypeScript-based frontend for efficient and type-safe UI development</li>
+    <li>Implemented data analytics for crop monitoring and smart recommendations</li>
+    <li>Designed system for tracking environmental parameters like soil and weather conditions</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">Java</span>
+    <span class="stack-tag">Spring Boot</span>
+    <span class="stack-tag">MySQL</span>
+    <span class="stack-tag">TypeScript</span>
+    <span class="stack-tag">Tailwind CSS</span>
+    <span class="stack-tag">REST API</span>
+    <span class="stack-tag">C++</span>
+    <span class="stack-tag">IoT</span>
+    <span class="stack-tag">Python (AI)</span>
+  </div>
+</div>
+      <!-- Smart Waste Management — MERN + IoT -->
+<div class="project-card" data-category="mern">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-recycle"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Smart-Waste-Management" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+                  <a href="https://iot-based-smart-waste-management.onrender.com/" class="project-link deployed" target="_blank">
+              <svg viewBox="0 0 24 24"><path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/></svg>
+              Live Demo
+            </a>
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Smart Waste Management System</div>
+
+  <div class="project-desc">
+    An IoT-enabled smart bin system for smart city infrastructure, featuring real-time waste monitoring, dustbin auto lid-opening and data-driven analytics.
+  </div>
+
+  <ul class="project-points">
+    <li>Arduino-based smart bin with ultrasonic sensor for automatic lid control</li>
+    <li>Real-time waste level monitoring using IoT data transmission</li>
+    <li>MERN-based web dashboard for live tracking and visualization</li>
+    <li>Integrated Chart.js for 7-day waste analytics and insights</li>
+    <li>Improves hygiene by reducing human contact with automated operation</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+    <span class="stack-tag">Chart.js</span>
+    <span class="stack-tag">Node.js</span>
+    <span class="stack-tag">Express.js</span>
+    <span class="stack-tag">MongoDB</span>
+    <span class="stack-tag">C++</span>
+    <span class="stack-tag">IoT</span>
+  </div>
+</div>
+
+      <!-- Airbnb Clone — MERN -->
+ <div class="project-card" data-category="mern">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-hotel"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Airbnb" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+      <a href="https://airbnbservices.onrender.com/listings" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Airbnb — Rental Platform</div>
+
+  <div class="project-desc">
+    A full-stack accommodation booking platform inspired by Airbnb, enabling users to list, explore, and reserve properties with location-based search and real-time availability.
+  </div>
+
+  <ul class="project-points">
+    <li>Implemented full CRUD operations for property listings with secure user authentication</li>
+    <li>Built responsive UI with advanced search and filtering features</li>
+    <li>Designed RESTful backend architecture using Node.js and Express</li>
+    <li>Deployed on Render with MongoDB Atlas for scalable cloud database management</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">Express.js</span>
+    <span class="stack-tag">MongoDB</span>
+  </div>
+</div>
+
+      <!-- Memory Challenge Game — Frontend -->
+      <div class="project-card" data-category="mern">
+        <div class="project-card-header">
+          <div class="project-card-icon"><i class="fas fa-brain"></i></div>
+          <div class="project-card-links">
+            <a href="https://github.com/kr254na/Memory-Game" class="project-link" target="_blank">
+              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-status status-live"><div class="project-status-dot"></div> Completed</div>
+        <div class="project-title">Memory Challenge Game</div>
+        <div class="project-desc">Interactive gamified experience built for college techfest — a timed image memory test with shuffle puzzle mechanics and prize logic.</div>
+        <ul class="project-points">
+          <li>12-image slideshow shown in 15 seconds for memorization</li>
+          <li>Shuffle puzzle — rearrange images in correct sequence</li>
+          <li>Prize-winning logic with gamification rewards</li>
+          <li>Deep JavaScript DOM manipulation & event-driven design</li>
+        </ul>
+        <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">Express.js</span>
+        </div>
+      </div>
+
+      <!-- NPGC College Website — Frontend -->
+      <div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-university"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/NPGC---Website" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.21.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+                  <a href="https://npgc.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+      
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Completed
+  </div>
+
+  <div class="project-title">NPGC College Website</div>
+
+  <div class="project-desc">
+    A responsive and user-centric institutional website designed for efficient management of academic information, student services, and campus updates for a modern college environment.
+  </div>
+
+  <ul class="project-points">
+    <li>Designed and developed responsive UI for seamless access across devices</li>
+    <li>Implemented structured navigation for admissions, notices, results, and resources</li>
+    <li>Built dynamic sections for announcements, events, and academic updates</li>
+    <li>Optimized layout for fast loading and improved user experience</li>
+    <li>Focused on clean UI/UX to enhance accessibility for students and faculty</li>
+    <li>Improved user experience by providing instant automated assistance</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+    <span class="stack-tag">Bootstrap</span>
+  </div>
+</div>
+    </div>
+
+    <!-- FRONTEND TAB -->
+    <div class="project-panel" id="tab-frontend">
+      <div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-cloud-sun"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Weather-Application" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.21.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Completed
+  </div>
+
+  <div class="project-title">Weather Application</div>
+
+  <div class="project-desc">
+    A real-time weather forecasting web application that provides current weather conditions and dynamic updates for any location using external weather APIs.
+  </div>
+
+  <ul class="project-points">
+    <li>Integrated weather API to fetch real-time temperature, humidity, and conditions</li>
+    <li>Implemented dynamic search functionality for multiple cities</li>
+    <li>Used asynchronous JavaScript (fetch API) for seamless data updates</li>
+    <li>Displays weather icons and conditions based on live API data</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">React.js</span>
+    <span class="stack-tag">REST API</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-university"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/NPGC---Website" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.21.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+                  <a href="https://npgc.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Completed
+  </div>
+
+  <div class="project-title">NPGC College Website</div>
+
+  <div class="project-desc">
+    A responsive and user-centric institutional website designed for efficient management of academic information, student services, and campus updates for a modern college environment.
+  </div>
+
+  <ul class="project-points">
+    <li>Designed and developed responsive UI for seamless access across devices</li>
+    <li>Implemented structured navigation for admissions, notices, results, and resources</li>
+    <li>Built dynamic sections for announcements, events, and academic updates</li>
+    <li>Optimized layout for fast loading and improved user experience</li>
+    <li>Focused on clean UI/UX to enhance accessibility for students and faculty</li>
+    <li>Focused on clean UI/UX to enhance accessibility for students and faculty</li>
+    <li>Improved user experience by providing instant automated assistance</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+    <span class="stack-tag">Bootstrap</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-utensils"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Restaurant-Page" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+            <a href="https://restaurant-page-h57ac4uqg-kr254nas-projects.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Restaurant Landing Page</div>
+
+  <div class="project-desc">
+    A visually engaging restaurant landing page designed to attract users and drive conversions through modern UI, compelling food visuals, and clear call-to-action elements.
+  </div>
+
+  <ul class="project-points">
+    <li>Designed high-converting landing page with focus on user engagement and UI/UX</li>
+    <li>Used modern CSS techniques (Flexbox, Grid) for clean layout design</li>
+    <li>Optimized visuals and structure to enhance user interaction and retention</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-stopwatch"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/Stopwatch" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Live Demo -->
+      <a href="https://stopwatch-green-one-39.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Stopwatch</div>
+
+  <div class="project-desc">
+    A lightweight and responsive stopwatch web application designed for precise time tracking with real-time updates and intuitive controls.
+  </div>
+
+  <ul class="project-points">
+    <li>Implemented start, stop, and reset functionality with accurate time tracking</li>
+    <li>Built real-time timer updates using JavaScript intervals</li>
+    <li>Focused on minimalistic design for better usability and speed</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-dice"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/Ludo-UI" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Live Demo -->
+      <a href="https://ludo-ui.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Ludo Game UI</div>
+
+  <div class="project-desc">
+    A visually rich and interactive Ludo game interface designed to replicate the classic board game experience with modern UI/UX and responsive gameplay layout.
+  </div>
+
+  <ul class="project-points">
+    <li>Designed colorful and interactive Ludo board with intuitive layout</li>
+    <li>Implemented responsive UI optimized for desktop and mobile gameplay</li>
+    <li>Recreated classic board game experience using modern web technologies</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-clock"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/Analog-Clock" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Live Demo -->
+      <a href="https://analog-clock-pyfd91hyz-kr254nas-projects.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Analog Clock</div>
+
+  <div class="project-desc">
+    A real-time analog clock web application featuring smooth hand animations and precise time synchronization using JavaScript.
+  </div>
+
+  <ul class="project-points">
+    <li>Implemented real-time clock using JavaScript Date API</li>
+    <li>Calculated rotation angles for hour, minute, and second hands</li>
+    <li>Created smooth animations using CSS transforms</li>
+    <li>Ensured accurate time updates with efficient interval handling</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-clock"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/Digital-Clock" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Live Demo -->
+      <a href="https://digital-clock-p5eh2cedf-kr254nas-projects.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Digital Clock</div>
+
+  <div class="project-desc">
+    A real-time digital clock web application featuring a clean numeric display with precise time updates and modern UI design.
+  </div>
+
+  <ul class="project-points">
+    <li>Implemented real-time clock using JavaScript Date API</li>
+    <li>Displayed time in digital format with seconds precision</li>
+    <li>Built dynamic UI updates using JavaScript intervals</li>
+    <li>Designed clean and minimal interface for better readability</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-weight"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/BMI-App---JS" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Live Demo -->
+      <a href="https://bmi-app-gilt.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">BMI Calculator Web Application</div>
+
+  <div class="project-desc">
+    A responsive health-focused web application that calculates Body Mass Index (BMI) and categorizes users based on their fitness level using real-time input processing.
+  </div>
+
+  <ul class="project-points">
+    <li>Implemented BMI calculation using height and weight inputs</li>
+    <li>Displayed categorized results (Underweight, Normal, Overweight, Obese)</li>
+    <li>Built dynamic UI updates using JavaScript for real-time feedback</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fab fa-spotify"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/Spotify-Clone" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Live Demo -->
+      <a href="https://spotify-clone-f2uu72jsq-kr254nas-projects.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Spotify — Music Player UI</div>
+
+  <div class="project-desc">
+    A fully responsive Spotify-inspired music player interface featuring interactive playback controls, modern UI design, and seamless user experience.
+  </div>
+
+  <ul class="project-points">
+    <li>Designed Spotify-inspired UI with sidebar navigation and music player layout</li>
+    <li>Built responsive layout using Flexbox and Grid for multi-device support</li>
+    <li>Focused on UI/UX to replicate real-world music streaming experience</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-brain"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/Simon-Says-Game" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Live Demo -->
+      <a href="https://simon-says-game-coral-eta.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Simon Says — Memory Game</div>
+
+  <div class="project-desc">
+    A dynamic memory-based game that challenges users to replicate increasingly complex sequences with real-time feedback and interactive gameplay.
+  </div>
+
+  <ul class="project-points">
+    <li>Generated random color sequences with increasing difficulty levels</li>
+    <li>Implemented user input validation and sequence matching logic</li>
+    <li>Provided real-time visual feedback using animations and effects</li>
+    <li>Handled game state transitions (start, progress, failure, restart)</li>
+    <li>Enhanced user experience with responsive design and smooth interactions</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/Amazon-Clone" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Live Demo -->
+      <a href="https://amazon-ebon-xi.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Amazon Clone — E-commerce UI</div>
+
+  <div class="project-desc">
+    A responsive Amazon-inspired e-commerce web application featuring product browsing, cart functionality, and a seamless shopping experience.
+  </div>
+
+  <ul class="project-points">
+    <li>Designed Amazon-like homepage with product listings and categories</li>
+    <li>Built responsive layout using CSS Flexbox and Grid</li>
+    <li>Focused on user-friendly navigation and clean UI/UX design</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-hand-rock"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/Stone-Paper-Scissor" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Live Demo -->
+      <a href="https://stone-paper-scissor-rust-eight.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Stone Paper Scissor — Interactive Game</div>
+
+  <div class="project-desc">
+    A browser-based strategy game where users compete against the computer using real-time decision logic and dynamic result evaluation.
+  </div>
+
+  <ul class="project-points">
+    <li>Implemented random computer move generation using JavaScript logic</li>
+    <li>Designed game rules for win/loss/draw outcome evaluation</li>
+    <li>Built interactive UI with instant feedback on user actions</li>
+    <li>Maintained score tracking system for player vs computer</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+  </div>
+</div>
+<div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-th"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/Tic-Tac-Toe" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+      <!-- Live Demo -->
+      <a href="https://tic-tac-toe-nu-puce-68.vercel.app/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Tic Tac Toe — Interactive Strategy Game</div>
+
+  <div class="project-desc">
+    A browser-based two-player strategy game featuring real-time move validation, win detection logic, and an interactive grid-based UI.
+  </div>
+
+  <ul class="project-points">
+    <li>Implemented 3×3 grid-based gameplay with turn-based logic</li>
+    <li>Built win detection system (row, column, diagonal conditions)</li>
+    <li>Handled draw scenarios and game reset functionality</li>
+    <li>Managed game state using JavaScript event handling and DOM updates</li>
+    <li>Designed responsive UI with interactive feedback for player moves</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+  </div>
+</div>
+    </div>
+
+    <!-- CORE JAVA TAB -->
+     <div class="project-panel" id="tab-core-java">
+      <div class="project-card" data-category="core-java">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-hospital"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Hospital-Management-System" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.21.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Completed
+  </div>
+
+  <div class="project-title">Hospital Management System</div>
+
+  <div class="project-desc">
+    A console application simulating real-world hospital operations, including patient management, billing automation, and secure role-based workflows.
+  </div>
+
+  <ul class="project-points">
+    <li>Implemented Role-Based Access Control (RBAC) for ADMIN, DOCTOR, NURSE, and RECEPTIONIST</li>
+    <li>Designed layered architecture inspired by Spring Boot principles for modularity</li>
+    <li>Built asynchronous audit system using ExecutorService for non-blocking logging</li>
+    <li>Developed automated billing engine for consultations, room charges, and pharmacy</li>
+    <li>Ensured thread-safe operations with concurrent processing and transaction handling</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">Java 17</span>
+    <span class="stack-tag">JDBC</span>
+    <span class="stack-tag">MySQL</span>
+    <span class="stack-tag">ExecutorService</span>
+    <span class="stack-tag">RBAC</span>
+  </div>
+</div>
+     </div>   
+
+         <!-- ADVANCED JAVA TAB -->
+     <div class="project-panel" id="tab-advanced-java">
+<div class="project-card" data-category="advanced-java">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-graduation-cap"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/ExamPro" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.21.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+      <a href="https://exampro-z5wh.onrender.com/" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">ExamPro — Online Examination System</div>
+
+  <div class="project-desc">
+    A full-stack enterprise-grade online examination and analytics platform featuring dual portals for teachers and students, real-time assessment engine, and anti-cheat proctoring system.
+  </div>
+
+  <ul class="project-points">
+    <li>Developed dual-portal system (Teacher Dashboard & Student Assessment Hub)</li>
+    <li>Implemented real-time exam engine with auto-save and smart countdown timer</li>
+    <li>Built anti-cheat system using tab-switch detection and auto submission logic</li>
+    <li>Designed RBAC-based secure authentication and session management</li>
+    <li>Created analytics dashboard with auto-grading, performance insights, and Excel export</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">Java EE</span>
+    <span class="stack-tag">Servlets</span>
+    <span class="stack-tag">JSP</span>
+    <span class="stack-tag">JSTL</span>
+    <span class="stack-tag">MySQL</span>
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+  </div>
+</div>
+     </div>   
+
+     <!-- SPRING BOOT -->
+    <div class="project-panel" id="tab-spring-boot">
+         <!-- Shiksha Swap — Java / Spring Boot -->
+<div class="project-card" data-category="spring-boot">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-exchange-alt"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Shiksha-Swap-Backend" class="project-link" target="_blank">
+        <i class="fab fa-github"></i> Backend
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-wip">
+    <div class="project-status-dot"></div> In Progress
+  </div>
+
+  <div class="project-title">Shiksha Swap</div>
+
+  <div class="project-desc">
+    A dual-role, on-demand hybrid tutoring platform that enables users to act as both learners and educators, providing real-time academic assistance, course content, and a knowledge exchange ecosystem.
+  </div>
+
+  <ul class="project-points">
+    <li>Designed a scalable Service-Oriented Architecture (SOA) with Spring Boot backend</li>
+    <li>Implemented dual-role user system (Student + Tutor) with booking workflows</li>
+    <li>Integrated Razorpay payment gateway for secure transactions</li>
+    <li>Developed AI-based price recommendation system using Python</li>
+    <li>Built RESTful APIs with Hibernate ORM and MySQL database</li>
+    <li>Cloud storage integration (AWS S3) for course content and media</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">Java</span>
+    <span class="stack-tag">Spring Boot</span>
+    <span class="stack-tag">MySQL</span>
+    <span class="stack-tag">React.js</span>
+    <span class="stack-tag">Tailwind CSS</span>
+    <span class="stack-tag">REST API</span>
+    <span class="stack-tag">Razorpay</span>
+    <span class="stack-tag">AWS</span>
+    <span class="stack-tag">Python (AI)</span>
+  </div>
+</div>
+
+      <!-- AgroSmart — Java / Spring Boot -->
+     <div class="project-card" data-category="spring-boot">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-seedling"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Agro-Smart-Frontend" class="project-link" target="_blank">
+        <i class="fab fa-github"></i> Frontend
+      </a>
+      <a href="https://github.com/kr254na/Agro-Smart-Backend" class="project-link" target="_blank">
+        <i class="fab fa-github"></i> Backend
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-wip">
+    <div class="project-status-dot"></div> In Progress
+  </div>
+
+  <div class="project-title">AgroSmart</div>
+
+  <div class="project-desc">
+    An intelligent agriculture management platform designed to assist farmers with real-time monitoring, data-driven insights, and smart decision-making using IoT and web technologies.
+  </div>
+
+  <ul class="project-points">
+    <li>Developed a scalable backend using Spring Boot with RESTful API architecture</li>
+    <li>Integrated IoT-based data collection for real-time farm monitoring</li>
+    <li>Built a TypeScript-based frontend for efficient and type-safe UI development</li>
+    <li>Implemented data analytics for crop monitoring and smart recommendations</li>
+    <li>Designed system for tracking environmental parameters like soil and weather conditions</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">Java</span>
+    <span class="stack-tag">Spring Boot</span>
+    <span class="stack-tag">MySQL</span>
+    <span class="stack-tag">TypeScript</span>
+    <span class="stack-tag">Tailwind CSS</span>
+    <span class="stack-tag">REST API</span>
+    <span class="stack-tag">C++</span>
+    <span class="stack-tag">IoT</span>
+    <span class="stack-tag">Python (AI)</span>
+  </div>
+</div>
+
+    </div>
+
+    <!-- MERN STACK -->
+    <div class="project-panel" id="tab-mern">
+            <!-- Smart Waste Management — MERN + IoT -->
+<div class="project-card" data-category="mern">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-recycle"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Smart-Waste-Management" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+                  <a href="https://iot-based-smart-waste-management.onrender.com/" class="project-link deployed" target="_blank">
+              <svg viewBox="0 0 24 24"><path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/></svg>
+              Live Demo
+            </a>
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Smart Waste Management System</div>
+
+  <div class="project-desc">
+    An IoT-enabled smart bin system for smart city infrastructure, featuring real-time waste monitoring, dustbin auto lid-opening and data-driven analytics.
+  </div>
+
+  <ul class="project-points">
+    <li>Arduino-based smart bin with ultrasonic sensor for automatic lid control</li>
+    <li>Real-time waste level monitoring using IoT data transmission</li>
+    <li>MERN-based web dashboard for live tracking and visualization</li>
+    <li>Integrated Chart.js for 7-day waste analytics and insights</li>
+    <li>Improves hygiene by reducing human contact with automated operation</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+    <span class="stack-tag">Chart.js</span>
+    <span class="stack-tag">Node.js</span>
+    <span class="stack-tag">Express.js</span>
+    <span class="stack-tag">MongoDB</span>
+    <span class="stack-tag">C++</span>
+    <span class="stack-tag">IoT</span>
+  </div>
+</div>
+
+      <!-- Airbnb Clone — MERN -->
+ <div class="project-card" data-category="mern">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-hotel"></i>
+    </div>
+    <div class="project-card-links">
+      <a href="https://github.com/kr254na/Airbnb" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+      <a href="https://airbnbservices.onrender.com/listings" class="project-link deployed" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M14 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V5.414l-9.293 9.293a1 1 0 0 1-1.414-1.414L18.586 4H15a1 1 0 0 1-1-1zm-8 4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4a1 1 0 1 1 2 0v4a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h4a1 1 0 1 1 0 2H6z"/>
+        </svg>
+        Live Demo
+      </a>
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Deployed
+  </div>
+
+  <div class="project-title">Airbnb — Rental Platform</div>
+
+  <div class="project-desc">
+    A full-stack accommodation booking platform inspired by Airbnb, enabling users to list, explore, and reserve properties with location-based search and real-time availability.
+  </div>
+
+  <ul class="project-points">
+    <li>Implemented full CRUD operations for property listings with secure user authentication</li>
+    <li>Built responsive UI with advanced search and filtering features</li>
+    <li>Designed RESTful backend architecture using Node.js and Express</li>
+    <li>Deployed on Render with MongoDB Atlas for scalable cloud database management</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">Express.js</span>
+    <span class="stack-tag">MongoDB</span>
+  </div>
+</div>
+
+      <!-- Memory Challenge Game — Frontend -->
+      <div class="project-card" data-category="mern">
+        <div class="project-card-header">
+          <div class="project-card-icon"><i class="fas fa-brain"></i></div>
+          <div class="project-card-links">
+            <a href="https://github.com/kr254na/Memory-Game" class="project-link" target="_blank">
+              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="project-status status-live"><div class="project-status-dot"></div> Completed</div>
+        <div class="project-title">Memory Challenge Game</div>
+        <div class="project-desc">Interactive gamified experience built for college techfest — a timed image memory test with shuffle puzzle mechanics and prize logic.</div>
+        <ul class="project-points">
+          <li>12-image slideshow shown in 15 seconds for memorization</li>
+          <li>Shuffle puzzle — rearrange images in correct sequence</li>
+          <li>Prize-winning logic with gamification rewards</li>
+          <li>Deep JavaScript DOM manipulation & event-driven design</li>
+        </ul>
+        <div class="project-stack">
+    <span class="stack-tag">HTML 5</span>
+    <span class="stack-tag">CSS 3</span>
+    <span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">Express.js</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Softwares -->
+    <div class="project-panel" id="tab-software">
+      <!-- College Management Software -->
+       <div class="project-card" data-category="software">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-university"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/College-Management-Software" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Completed
+  </div>
+
+  <div class="project-title">College Management System — ERP Solution</div>
+
+  <div class="project-desc">
+    A centralized college ERP system designed to manage student data, academic workflows, and administrative operations through a structured and scalable backend architecture.
+  </div>
+
+  <ul class="project-points">
+    <li>Developed modules for student records, faculty management, and course handling</li>
+    <li>Implemented CRUD operations with structured database integration</li>
+    <li>Managed academic workflows including attendance, exams, and results</li>
+    <li>Focused on clean architecture for scalability and maintainability</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">C#</span>
+    <span class="stack-tag">ADO.NET</span>
+    <span class="stack-tag">MySQL</span>
+  </div>
+       </div>
+       <!-- Quiz Software -->
+        <div class="project-card" data-category="frontend">
+  <div class="project-card-header">
+    <div class="project-card-icon">
+      <i class="fas fa-question-circle"></i>
+    </div>
+    <div class="project-card-links">
+
+      <!-- GitHub -->
+      <a href="https://github.com/kr254na/Quiz-Software" class="project-link" target="_blank">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.010-1.040-.015-2.040-3.338.724-4.042-1.610-4.042-1.610C4.422 18.070 3.633 17.700 3.633 17.700c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.070 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.760-1.605-2.665-.300-5.466-1.332-5.466-5.930 0-1.310.465-2.380 1.235-3.220-.135-.303-.540-1.523.105-3.176 0 0 1.005-.322 3.300 1.230.960-.267 1.980-.399 3.000-.405 1.020.006 2.040.138 3.000.405 2.280-1.552 3.285-1.230 3.285-1.230.645 1.653.240 2.873.120 3.176.765.840 1.230 1.910 1.230 3.220 0 4.610-2.805 5.625-5.475 5.920.420.360.810 1.096.810 2.220 0 1.606-.015 2.896-.015 3.286 0 .315.210.690.825.570C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+        GitHub
+      </a>
+
+    </div>
+  </div>
+
+  <div class="project-status status-live">
+    <div class="project-status-dot"></div> Completed
+  </div>
+
+  <div class="project-title">Quiz Software</div>
+
+  <div class="project-desc">
+    A dynamic quiz application that allows users to attempt multiple-choice questions with real-time answer validation and automated score calculation.
+  </div>
+
+  <ul class="project-points">
+    <li>Built dynamic question rendering system</li>
+    <li>Implemented answer validation and real-time score calculation</li>
+  </ul>
+
+  <div class="project-stack">
+    <span class="stack-tag">C#</span>
+    <span class="stack-tag">ADO.NET</span>
+    <span class="stack-tag">MySQL</span>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ==================== RESEARCH ==================== -->
+<section id="research">
+  <div class="section-wrapper">
+    <div class="section-header reveal">
+      <div class="section-label">Academic Research</div>
+      <h2 class="section-title">Research <em>Papers</em></h2>
+    </div>
+
+        <!-- Paper 1 - ARA++ Algorithm — -->
+<div class="research-card reveal">
+  <div class="research-badge" style="background:rgba(53, 162, 255, 0.1); border-color:#35a2ff; color:#35a2ff;">
+    📄 Scopus Indexed · Vol. 14, Issue 03, 2026 
+  </div>
+  <div class="research-title">
+    A Framework for Generalized Risk-Aware Planning and Decision-Making under Dynamic Adversarial Conditions
+  </div>
+  <div class="research-journal">
+    Annals of Computer Science and Intelligence Systems (Volume 14, Issue 03)
+  </div>
+  <ul class="research-points">
+    <li>Proposed ARA++, a novel framework extending ARA* by integrating probabilistic enemy risk factor modeling and adaptive thresholding.</li>
+    <li>Evaluates node-level risk and survival probability at discrete time intervals to provide dynamic path updates based on adversary movement.</li>
+    <li>Features a multi-objective cost function balancing path length, survival probability, and path deviation penalties.</li>
+    <li>Validated performance through a maze case study, outperforming A* and ARA* in producing safer and computationally efficient paths.</li>
+  </ul>
+  <div class="research-tags">
+    <span class="research-tag">ARA++</span>
+    <span class="research-tag">Risk-Aware Planning</span>
+    <span class="research-tag">Pathfinding</span>
+    <span class="research-tag">AI & Robotics</span>
+  </div>
+  <div class="research-actions">
+    <a href="https://doi.org/10.5281/zenodo.19186370" target="_blank" class="research-btn view">
+      🔗 View via DOI
+    </a>
+                  <a href="./assets/research-certificates/ACSIS ARA++ Research Certificate.pdf" target="_blank" class="research-btn certificate" style="background:rgba(255, 215, 0, 0.1); border: 1px solid #ffd700; color:#d4af37;">
+    📜 View Certificate
+  </a>
+    <a href="./assets/research-papers/ARA++ Algorithm.pdf" download class="research-btn download">
+      ⬇ Download PDF
+    </a>
+  </div>
+</div>
+
+    <!-- Paper 2 — Homomorphic Encryption -->
+    <div class="research-card reveal"  style="margin-top:1.5rem;">
+      <div class="research-badge">📄 Scopus Indexed · Vol. 43 No. 8, 2025</div>
+      <div class="research-title">A Hybrid Elgamal – Paillier Approach for Achieving Practical Fully 
+Homomorphic Encryption in Cloud Computing </div>
+      <div class="research-journal">Studies in Science of Science</div>
+      <ul class="research-points">
+        <li>Proposed a novel hybrid cryptographic model combining ElGamal and Paillier encryption schemes to enhance security and computational efficiency in secure data processing.</li>
+        <li>Applied advanced homomorphic encryption concepts — enabling computation on encrypted data without decryption — to improve data privacy in cloud and distributed systems.</li>
+        <li>The hybrid approach addresses the computational overhead of traditional schemes while maintaining strong mathematical security guarantees.</li>
+      </ul>
+      <div class="research-tags">
+        <span class="research-tag">Cryptography</span>
+        <span class="research-tag">ElGamal Encryption</span>
+        <span class="research-tag">Paillier Scheme</span>
+        <span class="research-tag">Homomorphic Encryption</span>
+        <span class="research-tag">Data Privacy</span>
+        <span class="research-tag">Secure Computation</span>
+      </div>
+      <div class="research-actions">
+        <a href="https://sciencejournal.eu/index.php/studies-in-science-of-science/article/view/1048" target="_blank" class="research-btn view">
+          🔗 View Published Paper
+        </a>
+              <a href="./assets/research-certificates/Homomorphic Encryption Research Certificate.pdf" target="_blank" class="research-btn certificate" style="background:rgba(255, 215, 0, 0.1); border: 1px solid #ffd700; color:#d4af37;">
+    📜 View Certificate
+  </a>
+        <a href="./assets/research-papers/Homomorphic Encryption.pdf" download class="research-btn download">
+          ⬇ Download PDF
+        </a>
+      </div>
+    </div>
+
+    <!-- Paper 3 — AgroSmart ARA++ -->
+     <div class="research-card reveal" style="margin-top:1.5rem;">
+  <div class="research-badge" style="background:rgba(46, 204, 113, 0.1); border-color:#2ecc71; color:#2ecc71;">
+    🚜 Precision Agriculture · 2026
+  </div>
+  <div class="research-title">
+    AGROSMART-ARA++: A Risk-Aware IoT-AI Platform for Autonomous Precision Agriculture
+  </div>
+  <div class="research-journal">
+    Intelligent Edge Computing for Precision and Sustainable Agriculture  
+  </div>
+  <ul class="research-points">
+    <li>Developed AgroSmart, a 6-layer cyber-physical architecture integrating Spring Boot, FastAPI, and IoT sensors for fully autonomous farm management.</li>
+    <li>Implemented the ARA++ engine to convert farms into probabilistic matrices, enabling rovers and drones to navigate hazards like waterlogged soil and disease "hot spots".</li>
+    <li>Achieved a 99.1% accuracy in crop recommendation using Random Forest/XGBoost classifiers and a 35% reduction in water wastage via precision irrigation routing.</li>
+    <li>Engineered a fail-safe mechanism that defaults autonomous equipment to a "hold" state during connectivity loss to prevent hardware damage.</li>
+  </ul>
+  <div class="research-tags">
+    <span class="research-tag">IoT & AI</span>
+    <span class="research-tag">Autonomous Rovers</span>
+    <span class="research-tag">Spring Boot</span>
+    <span class="research-tag">Precision Farming</span>
+    <span class="research-tag">Machine Learning</span>
+  </div>
+  <div class="research-actions">
+    <a href="./assets/research-papers/Agrosmart.pdf" download class="research-btn download">
+      ⬇ Download PDF
+    </a>
+  </div>
+</div>
+
+    <!-- Paper 4 — IKS and NEP -->
+    <div class="research-card reveal" style="margin-top:1.5rem;">
+      <div class="research-badge" style="background:rgba(255,107,53,0.1);border-color:var(--accent3);color:var(--accent3);">🎤 National Seminar Presentation · 2026</div>
+      <div class="research-title">Technology Enabled Promotion of Indian Knowledge Traditions in Contemporary Education</div>
+      <div class="research-journal">CKNKH National Seminar 2026</div>
+      <ul class="research-points">
+        <li>Presented at the CKNKH National Seminar on the intersection of modern educational technology with India's ancient knowledge systems.</li>
+        <li>Explored how digital platforms and AI can be leveraged to preserve, promote, and integrate classical Indian knowledge traditions into contemporary curricula.</li>
+      </ul>
+      <div class="research-tags">
+        <span class="research-tag">EdTech</span>
+        <span class="research-tag">Indian Knowledge Systems</span>
+        <span class="research-tag">Digital Education</span>
+         <span class="research-tag">National Education Policy</span>
+      </div>
+      <div class="research-actions">
+        <a href="./assets/research-papers/E Souvenir ( National Seminar 21st January ).pdf" target="_blank" class="research-btn view">
+          🔗 View Published Paper
+        </a>
+      <a href="./assets/research-certificates/IKS Research CKNKH Certificate.jpeg" target="_blank" class="research-btn certificate" style="background:rgba(255, 215, 0, 0.1); border: 1px solid #ffd700; color:#d4af37;">
+    📜 View Certificate
+  </a>
+        <a href="./assets/research-papers/Technology Enabled Promotion of IKS.pdf" download class="research-btn download">
+          ⬇ Download PDF
+        </a>
+      </div>
+    </div>
+
+        <!-- Paper 5 — Digitization of IKS -->
+<div class="research-card reveal" style="margin-top:1.5rem;">
+  <div class="research-badge" style="background:rgba(255, 107, 53, 0.1); border-color:#ff6b35; color:#ff6b35;">
+    🎓 Educational Technology · 2026
+  </div>
+  <div class="research-title">
+    Digitization of Indigenous Knowledge, ICT Integration, and Teacher Preparedness in Modern Education
+  </div>
+  <div class="research-journal">
+    BBD International Conference 2026
+  </div>
+  <ul class="research-points">
+    <li>Proposed an ICT-Driven Indigenous Knowledge Education Framework to preserve ancestral wisdom using digital archives, cloud repositories, and multimedia tools.</li>
+    <li>Explored the role of emerging technologies like AI, AR, and VR in creating immersive "Gurukul" experiences and personalized learning environments for ancient texts.</li>
+    <li>Advocated for a Java-based backend infrastructure to ensure the security, scalability, and interoperability of sensitive cultural data repositories.</li>
+    <li>Highlighted Teacher Preparedness and digital literacy as the critical links for successfully blending traditional experiential pedagogy with modern digital tools.</li>
+  </ul>
+  <div class="research-tags">
+    <span class="research-tag">IKS Digitization</span>
+    <span class="research-tag">ICT in Education</span>
+    <span class="research-tag">Java Platforms</span>
+    <span class="research-tag">AI & Immersive Learning</span>
+    <span class="research-tag">Teacher Training</span>
+  </div>
+  <div class="research-actions">
+    <a href="./assets/research-certificates/BBD IKS Conference Certificate.jpeg" target="_blank" class="research-btn certificate" style="background:rgba(255, 215, 0, 0.1); border: 1px solid #ffd700; color:#d4af37;">
+    📜 View Certificate
+  </a>
+    <a href="./assets/research-papers/Digitization of Indigenous Knowledge.pdf" download class="research-btn download">
+      ⬇ Download PDF
+    </a>
+  </div>
+</div>
+
+<!-- Paper 6 — ICT Tools in IKS -->
+ <div class="research-card reveal" style="margin-top:1.5rem;">
+  <div class="research-badge" style="background:rgba(155, 89, 182, 0.1); border-color:#9b59b6; color:#9b59b6;">
+    🎤 National Conference Presentation · 2026
+  </div>
+  <div class="research-title">
+    ICT & Emerging Technologies for Indian Knowledge Systems: A Framework-Oriented Approach
+  </div>
+  <div class="research-journal">
+    NPGC Conference 2026
+  </div>
+  <ul class="research-points">
+    <li>Designed a multi-dimensional framework to integrate Indian Knowledge Systems (IKS) into modern education through high-resolution scanning, OCR, and digital archiving.</li>
+    <li>Explored the use of AR/VR for immersive reconstructions of historical Gurukuls and observatories, enabling experiential learning for contemporary students.</li>
+    <li>Identified AI’s role in overcoming linguistic barriers through intelligent tutoring and natural language processing of ancient texts.</li>
+    <li>Proposed a Java-based enterprise infrastructure using Spring Boot to create secure, scalable, and interoperable repositories for sensitive cultural data.</li>
+    <li>Addressed the Digital Divide by advocating for mobile-first solutions and offline access to ensure inclusive reach for rural learners.</li>
+  </ul>
+  <div class="research-tags">
+    <span class="research-tag">IKS Integration</span>
+    <span class="research-tag">AR/VR Heritage</span>
+    <span class="research-tag">Java Enterprise</span>
+    <span class="research-tag">Digital Pedagogy</span>
+    <span class="research-tag">Cloud Scalability</span>
+  </div>
+  <div class="research-actions">
+      <a href="./assets/research-papers/ICT in IKS.pdf" download class="research-btn download">
+      ⬇ Download PDF
+    </a>
+  </div>
+</div>
+
+<!-- Paper 7 — Study of Docker -->
+ <div class="research-card reveal" style="margin-top:1.5rem;">
+  <div class="research-badge" style="background:rgba(0, 102, 204, 0.1); border-color:#0066cc; color:#0066cc;">
+    🐳 Cloud Computing · 2026
+  </div>
+  <div class="research-title">
+    Integration of Cloud Computing and DevOps : A study of famous DevOps tool – Docker
+  </div>
+  <div class="research-journal">
+    Cloud Computing Book Chapter
+  </div>
+  <ul class="research-points">
+    <li>Conducted a technical analysis of Docker Architecture, exploring the role of the Docker Engine, Images, and the central Docker Hub.</li>
+    <li>Analyzed the Docker Lifecycle, from writing Dockerfiles to the execution of portable, isolated containers across diverse environments.</li>
+  </ul>
+  <div class="research-tags">
+    <span class="research-tag">Docker</span>
+    <span class="research-tag">Containerization</span>
+    <span class="research-tag">DevOps</span>
+    <span class="research-tag">Virtualization</span>
+  </div>
+  <div class="research-actions">
+    <a href="./assets/research-papers/Study of Docker.pdf" download class="research-btn download">
+      ⬇ Download PDF
+    </a>
+  </div>
+</div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ==================== CERTIFICATES & COURSES ==================== -->
+<section id="certificates">
+  <div class="section-wrapper">
+    <div class="section-header reveal">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-title">Courses & <em>Certifications</em></h2>
+    </div>
+
+    <div class="cert-grid">
+
+      <div class="cert-card reveal reveal-delay-2" onclick="openModal('Java Fundamentals','Udemy · Abdul Bari','./assets/course-certificates/Udemy Java.pdf','java-cert')">
+        <div class="cert-badge">Major</div>
+        <div class="cert-icon">☕</div>
+        <div class="cert-title">Java Fundamentals</div>
+        <div class="cert-issuer">Udemy · Abdul Bari</div>
+        <div class="cert-desc">Object-oriented programming principles and core Java concepts for strong foundational programming skills.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+      <div class="cert-card reveal reveal-delay-1" >
+        <div class="cert-badge" style="background:rgba(255,107,53,0.15);border-color:var(--accent3);color:var(--accent3);">Ongoing</div>
+        <div class="cert-icon">🏭</div>
+        <div class="cert-title">Java Backend Development</div>
+        <div class="cert-issuer">Hanumant Technology Pvt. Ltd.</div>
+        <div class="cert-desc">Professional training program in backend development using Java and Spring Boot in a real-world industry environment.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+      <div class="cert-card reveal reveal-delay-1" onclick="openModal('Java Spring Framework','Udemy · Navin Reddy (Telusko)','./assets/course-certificates/Udemy Spring Framework Certificate.pdf','spring-cert')">
+        <div class="cert-badge">Major</div>
+        <div class="cert-icon">🌿</div>
+        <div class="cert-title">Java Spring Framework</div>
+        <div class="cert-issuer">Udemy · Navin Reddy (Telusko)</div>
+        <div class="cert-desc">Comprehensive Java fundamentals, Advanced Java, Spring Framework, and Spring Boot for backend development.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+      <div class="cert-card reveal reveal-delay-3" onclick="openModal('Java Full Stack Development','Eduskills Virtual Internship','./assets/course-certificates/Eduskills Java Full Stack.pdf','eduskills-cert')">
+        <div class="cert-badge">Major</div>
+        <div class="cert-icon">🔗</div>
+        <div class="cert-title">Java Full Stack Development</div>
+        <div class="cert-issuer">Eduskills Virtual Internship</div>
+        <div class="cert-desc">End-to-end Java Full Stack Development with Java backend frameworks, frontend integration, and deployment practices.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+      <div class="cert-card reveal" onclick="openModal('Web Development Masterclass','Udemy','./assets/course-certificates/Udemy Web Dev.pdf','udemy-webdev')">
+        <div class="cert-badge">Course</div>
+        <div class="cert-icon">🌐</div>
+        <div class="cert-title">Web Development BootCamp</div>
+        <div class="cert-issuer">Udemy</div>
+        <div class="cert-desc">Comprehensive training in modern web technologies including HTML, CSS, JS and various frontend libraries.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+      <div class="cert-card reveal" onclick="openModal('DELTA — Full Stack Web Development','Apna College · MERN Stack','assets/course-certificates/Apna College Delta Web Dev.pdf','delta-cert')">
+        <div class="cert-badge">Major</div>
+        <div class="cert-icon">🌐</div>
+        <div class="cert-title">DELTA — Full Stack Web Development</div>
+        <div class="cert-issuer">Apna College</div>
+        <div class="cert-desc">Intensive MERN Stack course covering frontend development, backend APIs, databases, and cloud deployment strategies.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+      <div class="cert-card reveal reveal-delay-1" onclick="openModal('MERN Stack Development','Eduskills Virtual Internship','./assets/course-certificates/Eduskills MERN Stack.pdf','eduskills-mern')">
+        <div class="cert-badge">Major</div>
+        <div class="cert-icon">💻</div>
+        <div class="cert-title">MERN Stack Development</div>
+        <div class="cert-issuer">Eduskills Virtual Internship</div>
+        <div class="cert-desc">Comprehensive MERN stack development training covering MongoDB, Express.js, React, and Node.js.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+      <div class="cert-card reveal reveal-delay-1" onclick="openModal('Java (Basic) Certificate','HackerRank','./assets/course-certificates/Hackerrank Java Basic Certificate.pdf','hr-java')">
+        <div class="cert-badge" style="background:rgba(46,204,113,0.1);border-color:#2ecc71;color:#2ecc71;">Skill</div>
+        <div class="cert-icon">☕</div>
+        <div class="cert-title">HackerRank Java (Basic)</div>
+        <div class="cert-issuer">HackerRank</div>
+        <div class="cert-desc">Successfully passed the HackerRank Java (Basic) certification, demonstrating proficiency in core Java concepts.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+      <div class="cert-card reveal reveal-delay-2" onclick="openModal('SQL (Advanced) Certificate','HackerRank','./assets/course-certificates/Hackerrank SQL Intermediate Certificate.pdf','hr-sql')">
+        <div class="cert-badge" style="background:rgba(46,204,113,0.1);border-color:#2ecc71;color:#2ecc71;">Skill</div>
+        <div class="cert-icon">🗄️</div>
+        <div class="cert-title">HackerRank SQL (Intermediate)</div>
+        <div class="cert-issuer">HackerRank</div>
+        <div class="cert-desc">Demonstrated SQL skills including complex queries and database architecture.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+      <div class="cert-card reveal reveal-delay-3" onclick="openModal('REST API Intermediate','HackerRank','./assets/course-certificates/Hackerrank REST API Intermediate Certificate.pdf','hr-rest')">
+        <div class="cert-badge" style="background:rgba(46,204,113,0.1);border-color:#2ecc71;color:#2ecc71;">Skill</div>
+        <div class="cert-icon">🔗</div>
+        <div class="cert-title">HackerRank REST API (Intermediate)</div>
+        <div class="cert-issuer">HackerRank</div>
+        <div class="cert-desc">Validation of intermediate skills in designing, building, and consuming RESTful APIs.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+      <div class="cert-card reveal" onclick="openModal('Software Engineer Intern','HackerRank','./assets/course-certificates/Hackerrank Software Engineer Intern Certificate.pdf','hr-intern')">
+        <div class="cert-badge" style="background:rgba(46,204,113,0.1);border-color:#2ecc71;color:#2ecc71;">Skill</div>
+        <div class="cert-icon">💻</div>
+        <div class="cert-title">HackerRank Software Engineer Intern</div>
+        <div class="cert-issuer">HackerRank</div>
+        <div class="cert-desc">Verified skills in problem-solving, data structures, and algorithms for software engineering roles.</div>
+        <span class="cert-view-btn">🖼️ View Certificate</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ==================== ACHIEVEMENTS ==================== -->
+<section id="achievements">
+  <div class="section-wrapper">
+    <div class="section-header reveal">
+      <div class="section-label">Honors & Recognition</div>
+      <h2 class="section-title">Achievements & <em>Awards</em></h2>
+    </div>
+
+    <div class="achievements-layout">
+
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">📊</div>
+        <div class="achievement-text">
+          <div class="achievement-title">School Prefect</div>
+          <div class="achievement-desc">Selected as School Prefect at St. Paul's College, Lucknow.</div>
+          <a class="achievement-proof" onclick="openModal('School Prefect Certificate','ICSE Board · St. Paul\'s College · 2021','./assets/achievement-certificates/School Prefect.jpg','school-prefect')">📋 View Certificate</a>
+        </div>
+      </div>
+    
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">📊</div>
+        <div class="achievement-text">
+          <div class="achievement-title">95.1% in ICSE & 91.2% in ISC</div>
+          <div class="achievement-desc">Maintained top 5 rank in school throughout high school at St. Paul's College, Lucknow.</div>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal reveal-delay-1">
+        <div class="achievement-icon">💯</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Perfect Score — Social Science</div>
+          <div class="achievement-desc">Awarded Subject Topper with a perfect 100/100 in Social Science during ICSE 2021.</div>
+          <a class="achievement-proof" onclick="openModal('Subject Topper Certificate','ICSE Board · St. Paul\'s College · 2021','./assets/achievement-certificates/ICSE History Civics Geography Topper.jpg','topper')">📋 View Certificate</a>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal reveal-delay-2">
+        <div class="achievement-icon">🏅</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Meritorious Award 2023</div>
+          <div class="achievement-desc">Received at the prestigious event conducted by College Dekho and Dainik Jagran for academic excellence.</div>
+          <a class="achievement-proof" onclick="openModal('Meritorious Award 2023','College Dekho × Dainik Jagran · 2023','./assets/achievement-certificates/College Dekho + Dainik Jagran ISC Meritorious Student.jpg','merit')">📋 View Award</a>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal reveal-delay-3">
+        <div class="achievement-icon">👑</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Medha Samman 2K24</div>
+          <div class="achievement-desc">Ranked first in BCA Sem 1 at National Post Graduate College, Lucknow.</div>
+          <a class="achievement-proof" onclick="openModal('BCA Rank #1 Certificate','BCA Topper','./assets/achievement-certificates/NPGC Sem - 1 Topper.jpg','rank1')">📋 View Rank Certificate</a>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal reveal-delay-3">
+        <div class="achievement-icon">👑</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Medha Samman 2K25</div>
+          <div class="achievement-desc">Ranked first in BCA Sem 2 and Sem 3 at National Post Graduate College, Lucknow.</div>
+          <a class="achievement-proof" onclick="openModal('BCA Rank #1 Certificate','BCA Topper','./assets/achievement-certificates/NPGC Sem 2,3 Topper.jpg','rank1')">📋 View Rank Certificate</a>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal reveal-delay-3">
+        <div class="achievement-icon">👑</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Medha Samman 2K26</div>
+          <div class="achievement-desc">Ranked first in BCA Sem 4 and Sem 5 at National Post Graduate College, Lucknow.</div>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">💻</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Inter College Coding Competition</div>
+          <div class="achievement-desc">Participated in Inter College Coding Competition at ITS Ghaziabad (Samagra), representing NPGC.</div>
+          <a class="achievement-proof" onclick="openModal('Coding Competition Participation','ITS Ghaziabad · Samagra Event','./assets/achievement-certificates/Samagra 2K25 ITS Ghaziabad Participation Certificate.jpg','coding')">📋 View Certificate</a>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal reveal-delay-1">
+        <div class="achievement-icon">🥇</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Quiz Competition — 1st Position</div>
+          <div class="achievement-desc">Represented college at ITS Ghaziabad (Samagra) Quiz Competition and secured 1st position.</div>
+          <a class="achievement-proof" onclick="openModal('Quiz Competition — 1st Position','ITS Ghaziabad · Samagra · 1st Place','./assets/achievement-certificates/Samagra 2K25 ITS Ghaziabad IT Quiz 1st prize.jpg','quiz')">📋 View Certificate</a>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal reveal-delay-2">
+        <div class="achievement-icon">🎪</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Technical Fest Volunteer</div>
+          <div class="achievement-desc">Volunteered in organizing college-level technical fest, demonstrating leadership and coordination skills.</div>
+          <a class="achievement-proof" onclick="openModal('Technical Fest Volunteer Certificate','NPGC · College Technical Fest','./assets/achievement-certificates/NPGC Techfest 4.O Volunteer Certificate.jpg','techfest')">📋 View Certificate</a>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal reveal-delay-3">
+        <div class="achievement-icon">🏆</div>
+        <div class="achievement-text">
+          <div class="achievement-title">Arjuna Award 2025</div>
+          <div class="achievement-desc">Recipient of the Arjuna Award for academic excellence and leadership at Udaan 4.0, Lucknow.</div>
+          <a class="achievement-proof" onclick="openModal('Arjuna Award 2025','Udaan 4.0 · Lucknow · 2025','./assets/achievement-certificates/Arjuna Award.jpg','arjuna2')">📋 View Award</a>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal reveal-delay-3">
+        <div class="achievement-icon">🏆</div>
+        <div class="achievement-text">
+          <div class="achievement-title">CKNKH Inspirational Student of the Year</div>
+          <div class="achievement-desc">Recipient of the CKNKH Inspirational Student of the Year Award for academic excellence and leadership</div>
+          <a class="achievement-proof" onclick="openModal('CKNKH Inspirational Student of the Year','Udaan 5.0 · Lucknow · 2026','./assets/achievement-certificates/CKNKH Inspirational Student Icon.jpeg','cknkh')">📋 View Award</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ==================== GALLERY ==================== -->
+<section id="gallery">
+  <div class="section-wrapper">
+    <div class="section-header reveal">
+      <div class="section-label">Moments & Milestones</div>
+      <h2 class="section-title">Achievement <em>Gallery</em></h2>
+    </div>
+
+    <div class="gallery-grid reveal">
+
+      <div class="gallery-item wide tall reveal" onclick="openModal('Arjuna Award 2025','Udaan 4.0, Lucknow — Academic Excellence','./assets/achievements/Arjuna Award.jpeg','gal-arjuna')">
+        <img src="./assets/achievements/Arjuna Award.jpeg" alt="Arjuna Award 2025" style="width:100%; height:100%; object-fit:cover;">
+        <div class="gallery-caption">
+          <div class="gallery-caption-title">Arjuna Award 2025</div>
+          <div class="gallery-caption-sub">Udaan 4.0, Lucknow — Academic Excellence</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-overlay-text">View Photo</div></div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-1" onclick="openModal('Quiz Competition — 1st Position','ITS Ghaziabad · Samagra','./assets/achievements/IT Quiz 1st Prize.jpeg','gal-quiz')">
+        <img src="./assets/achievements/IT Quiz 1st Prize.jpeg" alt="IT Quiz 1st Prize" style="width:100%; height:100%; object-fit:cover;">
+        <div class="gallery-caption">
+          <div class="gallery-caption-title">IT Quiz — 1st Position</div>
+          <div class="gallery-caption-sub">ITS Ghaziabad · Samagra</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-overlay-text">View Photo</div></div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-2" onclick="openModal('Meritorious Award 2023','College Dekho × Dainik Jagran','./assets/achievements/Merit Award 2K23.jpeg','gal-merit')">
+        <img src="./assets/achievements/Merit Award 2K23.jpeg" alt="Merit Award 2K23" style="width:100%; height:100%; object-fit:cover;">
+        <div class="gallery-caption">
+          <div class="gallery-caption-title">Meritorious Award 2023</div>
+          <div class="gallery-caption-sub">College Dekho × Dainik Jagran</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-overlay-text">View Photo</div></div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-3" onclick="openModal('Education 4.0 Expo','Technical Expo','./assets/achievements/Agrosmart Project Demonstration.jpeg','gal-agro')">
+        <img src="./assets/achievements/Agrosmart Project Demonstration.jpeg" alt="Agrosmart Project" style="width:100%; height:100%; object-fit:cover;">
+        <div class="gallery-caption">
+          <div class="gallery-caption-title">AgroSmart Project Demo</div>
+          <div class="gallery-caption-sub">Technical Project Showcase</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-overlay-text">View Photo</div></div>
+      </div>
+
+      <div class="gallery-item reveal" onclick="openModal('BCA Department Rank #1','Medha Samman 2K24','./assets/achievements/Medha Samman 2K24.jpeg','gal-rank1')">
+        <img src="./assets/achievements/Medha Samman 2K24.jpeg" alt="Medha Samman 2024" style="width:100%; height:100%; object-fit:cover;">
+        <div class="gallery-caption">
+          <div class="gallery-caption-title">Medha Samman 2K24</div>
+          <div class="gallery-caption-sub">BCA Rank #1 · NPGC Lucknow</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-overlay-text">View Photo</div></div>
+      </div>
+
+      <div class="gallery-item wide tall reveal reveal-delay-1" onclick="openModal('Smart Dustbin Project','Newspaper Feature & Demo','./assets/achievements/Smart Dustbin Project Demonstration.jpeg','gal-dustbin')">
+        <img src="./assets/achievements/Smart Dustbin Project Demonstration.jpeg" alt="Smart Dustbin Project" style="width:100%; height:100%; object-fit:cover; object-position:center;">
+        <div class="gallery-caption">
+          <div class="gallery-caption-title">Innovation: Smart Dustbin</div>
+          <div class="gallery-caption-sub">Prototype Demo</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-overlay-text">View Photo</div></div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-2" onclick="openModal('Medha Samman 2K25','BCA Rank #1 — Continues','./assets/achievements/Medha Samman 2K25.jpeg','gal-rank2')">
+        <img src="./assets/achievements/Medha Samman 2K25.jpeg" alt="Medha Samman 2025" style="width:100%; height:100%; object-fit:cover;">
+        <div class="gallery-caption">
+          <div class="gallery-caption-title">Medha Samman 2K25</div>
+          <div class="gallery-caption-sub">Maintaining Top Rank · NPGC Lucknow</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-overlay-text">View Photo</div></div>
+      </div>
+
+      <div class="gallery-item reveal reveal-delay-3" onclick="openModal('Medha Samman (Press)','Newspaper Clipping','./assets/achievements/Medha Samman Newspaper Cutting.jpg','gal-press1')">
+        <img src="./assets/achievements/Medha Samman Newspaper Cutting.jpg" alt="Newspaper Cutting Medha Samman" style="width:100%; height:100%; object-fit:cover;">
+        <div class="gallery-caption">
+          <div class="gallery-caption-title">Academic Honors (Press)</div>
+          <div class="gallery-caption-sub">National Post Graduate College Coverage</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-overlay-text">View Photo</div></div>
+      </div>
+
+      <div class="gallery-item reveal" onclick="openModal('Innovation & Press','Newspaper Coverage','./assets/achievements/Smart Dustbin Newspaper Cutting.jpg','gal-press2')">
+        <img src="./assets/achievements/Smart Dustbin Newspaper Cutting.jpg" alt="Newspaper Cutting Innovation" style="width:100%; height:100%; object-fit:cover;">
+        <div class="gallery-caption">
+          <div class="gallery-caption-title">Innovation Coverage</div>
+          <div class="gallery-caption-sub">Featured Hardware Project Recognition</div>
+        </div>
+        <div class="gallery-overlay"><div class="gallery-overlay-text">View Photo</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ==================== CONTACT ==================== -->
+<section id="contact">
+  <div class="section-wrapper">
+    <div class="section-header reveal">
+      <div class="section-label">Let's Connect</div>
+      <h2 class="section-title">Get In <em>Touch</em></h2>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-info reveal">
+        <p class="contact-tagline">
+          Looking to build something <span>extraordinary</span> with Java & Spring Boot?<br>
+          Let's make it happen.
+        </p>
+        <div class="contact-links">
+          <a href="tel:+919554054732" class="contact-link-item">
+            <div class="contact-link-icon">📞</div>
+            +91 95540 54732
+          </a>
+          <a href="mailto:krishnaagarwal0193@gmail.com" class="contact-link-item">
+            <div class="contact-link-icon">📧</div>
+            krishnaagarwal0193@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/kr254na" target="_blank" class="contact-link-item">
+            <div class="contact-link-icon">💼</div>
+            https://www.linkedin.com/in/kr254na/
+          </a>
+          <a href="https://github.com/kr254na" target="_blank" class="contact-link-item">
+            <div class="contact-link-icon">
+              <svg style="width:1rem;height:1rem;fill:currentColor;" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </div>
+            https://github.com/kr254na
+          </a>
+          <a href="https://leetcode.com/u/kr254na/" target="_blank" class="contact-link-item">
+            <div class="contact-link-icon">⚡</div>
+            https://leetcode.com/u/kr254na/
+          </a>
+          <a href="https://www.hackerrank.com/profile/krishnaagarwal07" target="_blank" class="contact-link-item">
+            <div class="contact-link-icon">💻</div>
+            https://www.hackerrank.com/profile/krishnaagarwal07
+          </a>
+          <a href="#" class="contact-link-item">
+            <div class="contact-link-icon">📍</div>
+            Lucknow, Uttar Pradesh, India
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card reveal reveal-delay-2">
+        <div class="contact-avatar-ring">
+          <div class="contact-avatar-inner">
+            <img src="./assets/profile-right.jpg" alt="Krishna Agarwal Profile">
+          </div>
+        </div>
+        <div class="contact-name">Krishna Agarwal</div>
+        <div class="contact-role-chip">Java Backend Developer</div>
+        <div class="contact-location">📍 Lucknow, India · Open to Remote & On-site</div>
+        <br>
+        <div style="display:flex;gap:0.8rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:1rem;">
+          <div style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:0.6rem 1rem;font-size:0.7rem;color:var(--text2);">☕ Java</div>
+          <div style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:0.6rem 1rem;font-size:0.7rem;color:var(--text2);">🌿 Spring Boot</div>
+          <div style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:0.6rem 1rem;font-size:0.7rem;color:var(--text2);">🔬 Research</div>
+        </div>
+        <div style="position:relative;z-index:1;margin-top:1.5rem;">
+          <a href="./assets/CV.pdf" download class="btn-cv" style="width:100%;justify-content:center;">⬇ Download CV / Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <p>Designed & Built by <span>Krishna Agarwal</span> · Java Backend Developer · Lucknow, India · 2025</p>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
