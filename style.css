@@ -1383,6 +1383,7 @@ main, section, .section-wrapper {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
+  word-break: break-all;
 }
 .contact-link-item:hover {
   border-color: var(--accent);
